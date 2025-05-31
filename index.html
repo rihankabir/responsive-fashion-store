@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alexa</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+<header class="sticky-top">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary py-3 sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">Alexa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About us</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="contact.html">Contact</a>
+        </li>
+      </ul>
+     <div class="d-flex ms-auto gap-2">
+  <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+</div>
+<a href="#" class="btn position-relative">
+        <i class="bi bi-cart fs-4"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-3">
+          0
+        </span>
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+</header>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="registerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="registerEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="registerPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="hero ">
+	<div class="container-fluid">
+<div class="row">
+<div class="con-lg-12">
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pic3.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption d-block">
+        <h5>"Summer Collection 2025" </h5>
+        <p>"Stay cool, confident, and effortlessly stylish. Explore our freshest looks of the season."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/pic2.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption d-block">
+        <h5>"Top Picks for Every Style"</h5>
+        <p>"From everyday basics to statement pieces — find what defines you."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/pic1.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption  d-block">
+        <h5>"Up to 50% Off – Limited Time"</h5>
+        <p>"Shop your favorites now before they’re gone. Style meets savings!"</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Featured Products</h2>
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/tshirt.jpg" class="card-img-top img-fluid" alt="Product 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Men's T-Shirt</h5>
+            <p class="card-text">$65.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/women.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Women's Dress</h5>
+            <p class="card-text">$439.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/hoodie.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kid's Hoodie</h5>
+            <p class="card-text">$119.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/denim.jpg" class="card-img-top" alt="Product 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Denim Jacket</h5>
+            <p class="card-text">$249.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/formal.jpg" class="card-img-top" alt="Product 5">
+          <div class="card-body text-center">
+            <h5 class="card-title">Formal Shirt</h5>
+            <p class="card-text">$29.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/top.jpg" class="card-img-top" alt="Product 6">
+          <div class="card-body text-center">
+            <h5 class="card-title">Summer Top</h5>
+            <p class="card-text">$108.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/men.jpg" class="card-img-top" alt="Product 7">
+          <div class="card-body text-center">
+            <h5 class="card-title">Men's Shorts</h5>
+            <p class="card-text">$21.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100">
+          <img src="images/casual.jpg" class="card-img-top" alt="Product 8">
+          <div class="card-body text-center">
+            <h5 class="card-title">Casual Dress</h5>
+            <p class="card-text">$34.99</p>
+            <a href="" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="test py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold">What Our Customers Say</h2>
+    <div class="row g-4">
+      
+      <!-- Testimonial Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100 testimonial-card hover-shadow transition">
+          <div class="mb-3">
+            <i class="bi bi-chat-quote-fill fs-1 text-primary"></i>
+          </div>
+          <p class="mb-3 fst-italic">"Great quality clothes, and fast delivery!"</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="https://i.pravatar.cc/60?img=1" alt="Sarah" class="rounded-circle me-2" width="40" height="40">
+            <strong>- Sarah K.</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100 testimonial-card hover-shadow transition">
+          <div class="mb-3">
+            <i class="bi bi-chat-quote-fill fs-1 text-primary"></i>
+          </div>
+          <p class="mb-3 fst-italic">"Absolutely love the summer collection!"</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="https://i.pravatar.cc/60?img=5" alt="Michael" class="rounded-circle me-2" width="40" height="40">
+            <strong>- Michael L.</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100 testimonial-card hover-shadow transition">
+          <div class="mb-3">
+            <i class="bi bi-chat-quote-fill fs-1 text-primary"></i>
+          </div>
+          <p class="mb-3 fst-italic">"Easy to shop and excellent support."</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="https://i.pravatar.cc/60?img=8" alt="Ayesha" class="rounded-circle me-2" width="40" height="40">
+            <strong>- Ayesha R.</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-secondary text-white text-center appart mt-5">
+  <div class="container">
+    <h2>Join Our Newsletter</h2>
+    <p class="mb-4">Get the latest updates and offers.</p>
+    <form class="row justify-content-center">
+      <div class="col-md-6 col-sm-8">
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <button class="btn btn-dark">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!--footer section-->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3">
+        <h5>Alexa</h5>
+        <p>High-quality fashion at your fingertips.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="shop.html" class="text-light text-decoration-none">Shop</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <p class="text-center mb-0">&copy; 2025 Alexa. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
